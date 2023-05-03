@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2529030C2922E26D0036C0C3 /* BirdDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529030B2922E26D0036C0C3 /* BirdDataSource.swift */; };
+		2529030E2922E7AC0036C0C3 /* BirdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2529030D2922E7AC0036C0C3 /* BirdCell.swift */; };
+		255C070F29199FCF00CA3B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C070E29199FCF00CA3B54 /* AppDelegate.swift */; };
+		255C071129199FCF00CA3B54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C071029199FCF00CA3B54 /* SceneDelegate.swift */; };
+		255C071329199FCF00CA3B54 /* BirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C071229199FCF00CA3B54 /* BirdsViewController.swift */; };
+		255C071629199FCF00CA3B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255C071429199FCF00CA3B54 /* Main.storyboard */; };
+		255C071829199FD100CA3B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255C071729199FD100CA3B54 /* Assets.xcassets */; };
+		255C071B29199FD100CA3B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255C071929199FD100CA3B54 /* LaunchScreen.storyboard */; };
+		255C072629199FD100CA3B54 /* EagleEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C072529199FD100CA3B54 /* EagleEyeTests.swift */; };
+		255C073029199FD100CA3B54 /* EagleEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C072F29199FD100CA3B54 /* EagleEyeUITests.swift */; };
+		255C073229199FD100CA3B54 /* EagleEyeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C073129199FD100CA3B54 /* EagleEyeUITestsLaunchTests.swift */; };
+		255C073F2919A05200CA3B54 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C073E2919A05200CA3B54 /* Bird.swift */; };
+		255C07412919A27000CA3B54 /* EBirdAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C07402919A27000CA3B54 /* EBirdAPI.swift */; };
+		255C07432919A79900CA3B54 /* BirdStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255C07422919A79900CA3B54 /* BirdStore.swift */; };
+		9F13E2752924A2220018F418 /* BirdMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F13E2742924A2220018F418 /* BirdMapController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		255C072229199FD100CA3B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 255C070329199FCF00CA3B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 255C070A29199FCF00CA3B54;
+			remoteInfo = EagleEye;
+		};
+		255C072C29199FD100CA3B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 255C070329199FCF00CA3B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 255C070A29199FCF00CA3B54;
+			remoteInfo = EagleEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2529030B2922E26D0036C0C3 /* BirdDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdDataSource.swift; sourceTree = "<group>"; };
+		2529030D2922E7AC0036C0C3 /* BirdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdCell.swift; sourceTree = "<group>"; };
+		255C070B29199FCF00CA3B54 /* EagleEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EagleEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		255C070E29199FCF00CA3B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		255C071029199FCF00CA3B54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		255C071229199FCF00CA3B54 /* BirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsViewController.swift; sourceTree = "<group>"; };
+		255C071529199FCF00CA3B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		255C071729199FD100CA3B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		255C071A29199FD100CA3B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		255C071C29199FD100CA3B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255C072129199FD100CA3B54 /* EagleEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EagleEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		255C072529199FD100CA3B54 /* EagleEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EagleEyeTests.swift; sourceTree = "<group>"; };
+		255C072B29199FD100CA3B54 /* EagleEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EagleEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		255C072F29199FD100CA3B54 /* EagleEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EagleEyeUITests.swift; sourceTree = "<group>"; };
+		255C073129199FD100CA3B54 /* EagleEyeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EagleEyeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		255C073E2919A05200CA3B54 /* Bird.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		255C07402919A27000CA3B54 /* EBirdAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBirdAPI.swift; sourceTree = "<group>"; };
+		255C07422919A79900CA3B54 /* BirdStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdStore.swift; sourceTree = "<group>"; };
+		9F13E2742924A2220018F418 /* BirdMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdMapController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		255C070829199FCF00CA3B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255C071E29199FD100CA3B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255C072829199FD100CA3B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		255C070229199FCF00CA3B54 = {
+			isa = PBXGroup;
+			children = (
+				255C070D29199FCF00CA3B54 /* EagleEye */,
+				255C072429199FD100CA3B54 /* EagleEyeTests */,
+				255C072E29199FD100CA3B54 /* EagleEyeUITests */,
+				255C070C29199FCF00CA3B54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		255C070C29199FCF00CA3B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				255C070B29199FCF00CA3B54 /* EagleEye.app */,
+				255C072129199FD100CA3B54 /* EagleEyeTests.xctest */,
+				255C072B29199FD100CA3B54 /* EagleEyeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		255C070D29199FCF00CA3B54 /* EagleEye */ = {
+			isa = PBXGroup;
+			children = (
+				255C070E29199FCF00CA3B54 /* AppDelegate.swift */,
+				255C071029199FCF00CA3B54 /* SceneDelegate.swift */,
+				255C071229199FCF00CA3B54 /* BirdsViewController.swift */,
+				255C071429199FCF00CA3B54 /* Main.storyboard */,
+				255C071729199FD100CA3B54 /* Assets.xcassets */,
+				255C071929199FD100CA3B54 /* LaunchScreen.storyboard */,
+				255C071C29199FD100CA3B54 /* Info.plist */,
+				255C073E2919A05200CA3B54 /* Bird.swift */,
+				255C07402919A27000CA3B54 /* EBirdAPI.swift */,
+				255C07422919A79900CA3B54 /* BirdStore.swift */,
+				2529030B2922E26D0036C0C3 /* BirdDataSource.swift */,
+				2529030D2922E7AC0036C0C3 /* BirdCell.swift */,
+				9F13E2742924A2220018F418 /* BirdMapController.swift */,
+			);
+			path = EagleEye;
+			sourceTree = "<group>";
+		};
+		255C072429199FD100CA3B54 /* EagleEyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				255C072529199FD100CA3B54 /* EagleEyeTests.swift */,
+			);
+			path = EagleEyeTests;
+			sourceTree = "<group>";
+		};
+		255C072E29199FD100CA3B54 /* EagleEyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				255C072F29199FD100CA3B54 /* EagleEyeUITests.swift */,
+				255C073129199FD100CA3B54 /* EagleEyeUITestsLaunchTests.swift */,
+			);
+			path = EagleEyeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		255C070A29199FCF00CA3B54 /* EagleEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255C073529199FD100CA3B54 /* Build configuration list for PBXNativeTarget "EagleEye" */;
+			buildPhases = (
+				255C070729199FCF00CA3B54 /* Sources */,
+				255C070829199FCF00CA3B54 /* Frameworks */,
+				255C070929199FCF00CA3B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EagleEye;
+			productName = EagleEye;
+			productReference = 255C070B29199FCF00CA3B54 /* EagleEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		255C072029199FD100CA3B54 /* EagleEyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255C073829199FD100CA3B54 /* Build configuration list for PBXNativeTarget "EagleEyeTests" */;
+			buildPhases = (
+				255C071D29199FD100CA3B54 /* Sources */,
+				255C071E29199FD100CA3B54 /* Frameworks */,
+				255C071F29199FD100CA3B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				255C072329199FD100CA3B54 /* PBXTargetDependency */,
+			);
+			name = EagleEyeTests;
+			productName = EagleEyeTests;
+			productReference = 255C072129199FD100CA3B54 /* EagleEyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		255C072A29199FD100CA3B54 /* EagleEyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255C073B29199FD100CA3B54 /* Build configuration list for PBXNativeTarget "EagleEyeUITests" */;
+			buildPhases = (
+				255C072729199FD100CA3B54 /* Sources */,
+				255C072829199FD100CA3B54 /* Frameworks */,
+				255C072929199FD100CA3B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				255C072D29199FD100CA3B54 /* PBXTargetDependency */,
+			);
+			name = EagleEyeUITests;
+			productName = EagleEyeUITests;
+			productReference = 255C072B29199FD100CA3B54 /* EagleEyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		255C070329199FCF00CA3B54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					255C070A29199FCF00CA3B54 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					255C072029199FD100CA3B54 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 255C070A29199FCF00CA3B54;
+					};
+					255C072A29199FD100CA3B54 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 255C070A29199FCF00CA3B54;
+					};
+				};
+			};
+			buildConfigurationList = 255C070629199FCF00CA3B54 /* Build configuration list for PBXProject "EagleEye" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 255C070229199FCF00CA3B54;
+			productRefGroup = 255C070C29199FCF00CA3B54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				255C070A29199FCF00CA3B54 /* EagleEye */,
+				255C072029199FD100CA3B54 /* EagleEyeTests */,
+				255C072A29199FD100CA3B54 /* EagleEyeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		255C070929199FCF00CA3B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255C071B29199FD100CA3B54 /* LaunchScreen.storyboard in Resources */,
+				255C071829199FD100CA3B54 /* Assets.xcassets in Resources */,
+				255C071629199FCF00CA3B54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255C071F29199FD100CA3B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255C072929199FD100CA3B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		255C070729199FCF00CA3B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255C071329199FCF00CA3B54 /* BirdsViewController.swift in Sources */,
+				255C070F29199FCF00CA3B54 /* AppDelegate.swift in Sources */,
+				2529030E2922E7AC0036C0C3 /* BirdCell.swift in Sources */,
+				2529030C2922E26D0036C0C3 /* BirdDataSource.swift in Sources */,
+				255C073F2919A05200CA3B54 /* Bird.swift in Sources */,
+				255C07412919A27000CA3B54 /* EBirdAPI.swift in Sources */,
+				255C07432919A79900CA3B54 /* BirdStore.swift in Sources */,
+				9F13E2752924A2220018F418 /* BirdMapController.swift in Sources */,
+				255C071129199FCF00CA3B54 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255C071D29199FD100CA3B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255C072629199FD100CA3B54 /* EagleEyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255C072729199FD100CA3B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255C073229199FD100CA3B54 /* EagleEyeUITestsLaunchTests.swift in Sources */,
+				255C073029199FD100CA3B54 /* EagleEyeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		255C072329199FD100CA3B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 255C070A29199FCF00CA3B54 /* EagleEye */;
+			targetProxy = 255C072229199FD100CA3B54 /* PBXContainerItemProxy */;
+		};
+		255C072D29199FD100CA3B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 255C070A29199FCF00CA3B54 /* EagleEye */;
+			targetProxy = 255C072C29199FD100CA3B54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		255C071429199FCF00CA3B54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255C071529199FCF00CA3B54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		255C071929199FD100CA3B54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255C071A29199FD100CA3B54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		255C073329199FD100CA3B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		255C073429199FD100CA3B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		255C073629199FD100CA3B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EagleEye/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsharp.EagleEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		255C073729199FD100CA3B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EagleEye/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsharp.EagleEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		255C073929199FD100CA3B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsharp.EagleEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EagleEye.app/EagleEye";
+			};
+			name = Debug;
+		};
+		255C073A29199FD100CA3B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsharp.EagleEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EagleEye.app/EagleEye";
+			};
+			name = Release;
+		};
+		255C073C29199FD100CA3B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsharp.EagleEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EagleEye;
+			};
+			name = Debug;
+		};
+		255C073D29199FD100CA3B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dsharp.EagleEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EagleEye;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		255C070629199FCF00CA3B54 /* Build configuration list for PBXProject "EagleEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255C073329199FD100CA3B54 /* Debug */,
+				255C073429199FD100CA3B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255C073529199FD100CA3B54 /* Build configuration list for PBXNativeTarget "EagleEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255C073629199FD100CA3B54 /* Debug */,
+				255C073729199FD100CA3B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255C073829199FD100CA3B54 /* Build configuration list for PBXNativeTarget "EagleEyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255C073929199FD100CA3B54 /* Debug */,
+				255C073A29199FD100CA3B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255C073B29199FD100CA3B54 /* Build configuration list for PBXNativeTarget "EagleEyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255C073C29199FD100CA3B54 /* Debug */,
+				255C073D29199FD100CA3B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 255C070329199FCF00CA3B54 /* Project object */;
+}
